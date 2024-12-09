@@ -6,7 +6,9 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Search - My sample book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>BOOLEAN &#8212; My sample book</title>
   
   
   
@@ -58,12 +60,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'search';</script>
-  <script src="_static/searchtools.js"></script>
-  <script src="_static/language_data.js"></script>
-  <script src="searchindex.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'BOLEAN';</script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Algoritma" href="Algoritma.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="de%20morgan.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -85,7 +86,7 @@
   <dialog id="pst-search-dialog">
     
 <form class="bd-search d-flex align-items-center"
-      action="#"
+      action="search.html"
       method="get">
   <i class="fa-solid fa-magnifying-glass"></i>
   <input type="search"
@@ -114,8 +115,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -169,9 +168,9 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="BOLEAN.html">BOOLEAN</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">BOOLEAN</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Algoritma.html">Algoritma</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Centrality_graph.html">Centrality graph</a></li>
 </ul>
@@ -245,7 +244,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fsearch.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FBOLEAN.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -257,6 +256,54 @@
   </span>
 <span class="btn__text-container">Open issue</span>
 </a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/BOLEAN.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
 </li>
       
   </ul>
@@ -290,7 +337,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -299,41 +348,107 @@
 </div>
               
               
-  <div class="bd-search-container">
-    <h1>Search</h1>
-    <noscript>
-      <div class="admonition error">
-        <p class="admonition-title">Error</p>
-        <p>Please activate JavaScript to enable the search functionality.</p>
-      </div>
-    </noscript>
-    
-<form class="bd-search d-flex align-items-center"
-      action="#"
-      method="get">
-  <i class="fa-solid fa-magnifying-glass"></i>
-  <input type="search"
-         class="form-control"
-         name="q"
-         placeholder="Search this book..."
-         aria-label="Search this book..."
-         autocomplete="off"
-         autocorrect="off"
-         autocapitalize="off"
-         spellcheck="false"/>
-  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-    <div id="search-results"></div>
-  </div>
-  <script>
-    // Activate the search field on page load
-    let searchInput = document.querySelector("form.bd-search input");
-    if (searchInput) {
-        searchInput.focus();
-        searchInput.select();
-        console.log("[PST]: Set focus on search field.");
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>BOOLEAN</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-boolean">PENGERTIAN BOOLEAN</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-boolean">FUNGSI BOOLEAN</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-boolean">CONTOH BOOLEAN</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penggunaan-dalampernyataan-kondisional">PENGGUNAAN DALAMPERNYATAAN KONDISIONAL</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penggunaan-dalam-operasi-logika">PENGGUNAAN DALAM OPERASI LOGIKA</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penggunaan-dalam-pengambilan-keputusan-kompleks">PENGGUNAAN DALAM PENGAMBILAN KEPUTUSAN KOMPLEKS</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="boolean">
+<h1>BOOLEAN<a class="headerlink" href="#boolean" title="Link to this heading">#</a></h1>
+<section id="pengertian-boolean">
+<h2>PENGERTIAN BOOLEAN<a class="headerlink" href="#pengertian-boolean" title="Link to this heading">#</a></h2>
+<p>boolean adalah konsep dalam pemrograman, merujuk pada tipe data yang hanya memiliki dua nilai mungkin, yaitu true (benar) dan false (salah).</p>
+</section>
+<section id="fungsi-boolean">
+<h2>FUNGSI BOOLEAN<a class="headerlink" href="#fungsi-boolean" title="Link to this heading">#</a></h2>
+<p>Pengambilan keputusan: boolean dipakai untuk membuat keputusan dalam program. Misalnya, dalam struktur kontrol seperti pernyataan if, else, dan elif, boolean menentukan path mana yang akan diikuti program berdasarkan kondisi yang bernilai true atau false.
+Operasi logika: boolean memungkinkan operasi logika seperti AND (&amp;&amp;), OR (||), dan NOT (!). Operasi ini digunakan untuk menggabungkan atau memodifikasi beberapa kondisi boolean.
+Pengujian kondisi: dalam pemrograman, programmer sering kali perlu menguji apakah suatu kondisi terpenuhi atau tidak. Misalnya, dalam sebuah web app, mungkin perlu memeriksa apakah user sudah login (true) atau belum (false) sebelum mengizinkan akses ke halaman tertentu.
+Pengendalian program flow: boolean dimanfaatkan untuk mengontrol program flow, seperti dalam loop atau iterasi. Contohnya, loop while atau for dalam banyak bahasa pemrograman menggunakan kondisi boolean untuk menentukan kapan loop harus berhenti.
+Representasi status: boolean sering digunakan untuk merepresentasikan status on/off, ya/tidak, aktif/tidak aktif, berguna dalam pengembangan aplikasi dan sistem.</p>
+</section>
+<section id="contoh-boolean">
+<h2>CONTOH BOOLEAN<a class="headerlink" href="#contoh-boolean" title="Link to this heading">#</a></h2>
+<section id="penggunaan-dalampernyataan-kondisional">
+<h3>PENGGUNAAN DALAMPERNYATAAN KONDISIONAL<a class="headerlink" href="#penggunaan-dalampernyataan-kondisional" title="Link to this heading">#</a></h3>
+<p>isLoggedIn = True
+if isLoggedIn:
+print(“Pengguna telah login.”)
+else:
+print(“Pengguna belum login.”)</p>
+<p>Dalam contoh di atas, isLoggedIn adalah variabel boolean. Jika isLoggedIn bernilai True, program akan menghasilkan “Pengguna telah login.” Jika False, program menampilkan “Pengguna belum login.”</p>
+</section>
+<section id="penggunaan-dalam-operasi-logika">
+<h3>PENGGUNAAN DALAM OPERASI LOGIKA<a class="headerlink" href="#penggunaan-dalam-operasi-logika" title="Link to this heading">#</a></h3>
+<p>a = True
+b = False
+print(a and b)  # Hasilnya False
+print(a or b)   # Hasilnya True
+print(not a)    # Hasilnya False</p>
+<p>Contoh di atas menunjukkan penggunaan operasi logika AND, OR, dan NOT dengan variabel boolean.</p>
+</section>
+<section id="penggunaan-dalam-pengambilan-keputusan-kompleks">
+<h3>PENGGUNAAN DALAM PENGAMBILAN KEPUTUSAN KOMPLEKS<a class="headerlink" href="#penggunaan-dalam-pengambilan-keputusan-kompleks" title="Link to this heading">#</a></h3>
+<p>umur = 20
+memilikiSIM = True
+if umur &gt;= 17 and memilikiSIM:
+print(“Diperbolehkan mengemudi.”)
+else:
+print(“Tidak diperbolehkan mengemudi.”)</p>
+<p>Dalam contoh ini, keputusan diambil berdasarkan dua kondisi, yaitu umur dan memilikiSIM. Kedua kondisi harus bernilai True untuk menghasilkan “Diperbolehkan mengemudi.”</p>
+<p>Refensi : <a class="reference external" href="https://revou.co/kosakata/boolean">https://revou.co/kosakata/boolean</a></p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
     }
-  </script>
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
 
               
               
@@ -342,12 +457,53 @@
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="de%20morgan.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">&lt;no title&gt;</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Algoritma.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Algoritma</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-boolean">PENGERTIAN BOOLEAN</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-boolean">FUNGSI BOOLEAN</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-boolean">CONTOH BOOLEAN</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penggunaan-dalampernyataan-kondisional">PENGGUNAAN DALAMPERNYATAAN KONDISIONAL</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penggunaan-dalam-operasi-logika">PENGGUNAAN DALAM OPERASI LOGIKA</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penggunaan-dalam-pengambilan-keputusan-kompleks">PENGGUNAAN DALAM PENGAMBILAN KEPUTUSAN KOMPLEKS</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
