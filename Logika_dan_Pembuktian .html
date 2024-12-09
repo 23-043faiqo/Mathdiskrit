@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>&lt;no title&gt; &#8212; My sample book</title>
+    <title>Logika Matematika &#8212; My sample book</title>
   
   
   
@@ -62,11 +62,9 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'de morgan';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Logika_dan_Pembuktian ';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="BOOLEAN" href="BOLEAN.html" />
-    <link rel="prev" title="Markdown Files" href="markdown.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -117,6 +115,8 @@
     <div class="bd-container__inner bd-page-width">
       
       
+      
+        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -171,10 +171,12 @@
             </li>
         </ul>
         <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
 <li class="toctree-l1"><a class="reference internal" href="BOLEAN.html">BOOLEAN</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Algoritma.html">Algoritma</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DERETAN_DAN_REKURSIF.html">DERETAN DAN REKURSIF</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Centrality_graph.html">Centrality graph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Himpunan.html">Himpunan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="naive_beyes.html">NAIVE BEYES</a></li>
 </ul>
 
     </div>
@@ -246,7 +248,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fde morgan.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FLogika_dan_Pembuktian .html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -276,7 +278,7 @@
       
       
       
-      <li><a href="_sources/de morgan.md" target="_blank"
+      <li><a href="_sources/Logika_dan_Pembuktian .md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -352,7 +354,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>Logika Matematika</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -361,9 +363,13 @@
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#negasi">Negasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konjungsi">Konjungsi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disjungsi">Disjungsi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implikasi">Implikasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#biimplikasi">Biimplikasi</a></li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -374,54 +380,159 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <ol class="arabic simple">
-<li><p>de morgan
-<span class="math notranslate nohighlight">\(\overline{A \cap B}=\bar{A} \cup \bar{B}\)</span>
-<span class="math notranslate nohighlight">\(\overline{A \cup B}=\bar{A} \cap \bar{B}\)</span>
-Contoh:</p></li>
-</ol>
-<p>Misalkan A: “Hujan”, B: “Suhu dingin”.</p>
-<p>¬(A ∧ B): “Tidak hujan dan tidak suhu dingin”.
-¬A ∨ ¬B: “Tidak hujan atau tidak suhu dingin”.
-Bukti:</p>
-<p>A	B	A ∧ B	¬(A ∧ B)	¬A	¬B	¬A ∨ ¬B
-T	T	T	F	F	F	F
-T	F	F	T	F	T	T
-F	T	F	T	T	F	T
-F	F	F	T	T	T	T</p>
-<p>Hasil menunjukkan bahwa ¬(A ∧ B) sama dengan ¬A ∨ ¬B.</p>
-<ol class="arabic simple" start="2">
-<li><p>absorption
-<span class="math notranslate nohighlight">\(A \cup(A \cap B)=A\)</span>
-<span class="math notranslate nohighlight">\(A \cap(A \cup B)=A\)</span></p></li>
-</ol>
-<p>contoh :
-Misalkan A: “Belajar”, B: “Mendengarkan musik”.</p>
-<p>A ∧ (A ∨ B): “Belajar dan (belajar atau mendengarkan musik)”.
-Hasilnya: “Belajar”.
-Bukti:</p>
-<p>A	B	A ∨ B	A ∧ (A ∨ B)
-T	T	T	T
-T	F	T	T
-F	T	T	F
-F	F	F	F
-Hasil menunjukkan bahwa A ∧ (A ∨ B) sama dengan A.</p>
-<ol class="arabic simple" start="3">
-<li><p>complement
-<span class="math notranslate nohighlight">\(A \cup \bar{A}=U\)</span>
-<span class="math notranslate nohighlight">\(A \cap \bar{A}=\emptyset\)</span></p></li>
-</ol>
-<p>Contoh:</p>
-<p>Misalkan A: “Belajar”, B: “Mendengarkan musik”.</p>
-<p>A ∧ (A ∨ B): “Belajar dan (belajar atau mendengarkan musik)”.
-Hasilnya: “Belajar”.
-Bukti:</p>
-<p>A	B	A ∨ B	A ∧ (A ∨ B)
-T	T	T	T
-T	F	T	T
-F	T	T	F
-F	F	F	F
-Hasil menunjukkan bahwa A ∧ (A ∨ B) sama dengan A.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="logika-matematika">
+<h1>Logika Matematika<a class="headerlink" href="#logika-matematika" title="Link to this heading">#</a></h1>
+<section id="negasi">
+<h2>Negasi<a class="headerlink" href="#negasi" title="Link to this heading">#</a></h2>
+<p>Negasi adalah sebuah istilah yang digunakan untuk menyatakan ingkaran atau penyangkalan terhadap suatu pernyataan atau proposisi. Sederhananya, negasi adalah kebalikan dari suatu pernyataan.
+Negasi ditandai dengan simbol (~). Jika preposisi awal (p) bernilai benar, maka pernyataan negasinya (~p) adalah salah.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>P</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\sim p\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>T</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-odd"><td><p>F</p></td>
+<td><p>T</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="konjungsi">
+<h2>Konjungsi<a class="headerlink" href="#konjungsi" title="Link to this heading">#</a></h2>
+<p>Negasi adalah sebuah istilah yang digunakan untuk menyatakan ingkaran atau penyangkalan terhadap suatu pernyataan atau proposisi. Sederhananya, negasi adalah kebalikan dari suatu pernyataan.
+Konjungsi disimbolkan dengan (^). Kebenaran kalimat dengan konjungsi dijelaskan dalam tabel kebenaran konjungsi.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>p</p></th>
+<th class="head"><p>q</p></th>
+<th class="head"><p>p <span class="math notranslate nohighlight">\(\land\)</span> q</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>T</p></td>
+<td><p>F</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-even"><td><p>F</p></td>
+<td><p>T</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-odd"><td><p>F</p></td>
+<td><p>F</p></td>
+<td><p>F</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="disjungsi">
+<h2>Disjungsi<a class="headerlink" href="#disjungsi" title="Link to this heading">#</a></h2>
+<p>Disjungsi adalah sebuah operasi dalam logika matematika yang menghubungkan dua atau lebih pernyataan menjadi satu pernyataan majemuk. Disjungsi ini sering diartikan sebagai “atau”.
+dan dilambangkan dengan “v”.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>p</p></th>
+<th class="head"><p>q</p></th>
+<th class="head"><p>p <span class="math notranslate nohighlight">\(\lor\)</span> q</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>T</p></td>
+<td><p>F</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-even"><td><p>F</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>F</p></td>
+<td><p>F</p></td>
+<td><p>F</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="implikasi">
+<h2>Implikasi<a class="headerlink" href="#implikasi" title="Link to this heading">#</a></h2>
+<p>Implikasi dalam logika matematika adalah sebuah hubungan sebab-akibat antara dua pernyataan. Implikasi ini sering diartikan sebagai “jika … maka …”, juga disimbolkan oleh karakter “→”.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>p</p></th>
+<th class="head"><p>q</p></th>
+<th class="head"><p>p<span class="math notranslate nohighlight">\(\rightarrow\)</span>q</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>T</p></td>
+<td><p>F</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-even"><td><p>F</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>F</p></td>
+<td><p>F</p></td>
+<td><p>T</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="biimplikasi">
+<h2>Biimplikasi<a class="headerlink" href="#biimplikasi" title="Link to this heading">#</a></h2>
+<p>Biimplikasi dalam logika matematika adalah hubungan timbal balik antara dua pernyataan. Artinya, kedua pernyataan tersebut memiliki nilai kebenaran yang sama, baik benar atau salah. Biimplikasi sering diartikan sebagai “jika dan hanya jika”.Implikasi ganda terjadi dalam kalimat majemuk dan diwakili oleh “↔”.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>p</p></th>
+<th class="head"><p>q</p></th>
+<th class="head"><p>p <span class="math notranslate nohighlight">\(\leftrightarrow\)</span> q</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>T</p></td>
+<td><p>F</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-even"><td><p>F</p></td>
+<td><p>T</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-odd"><td><p>F</p></td>
+<td><p>F</p></td>
+<td><p>T</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Buatlah tabel kebenaran untuk~pernyataan berikut $<span class="math notranslate nohighlight">\(P\lor(R\to\ Q)\)</span>$</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{array}{c|c|c|c|cc}P&amp;Q&amp;R&amp;\ Q&amp;R\to\ Q&amp;P\lor(R\to\ Q)\\\hline\text{Т}&amp;\text{Т}&amp;\text{Т}&amp;\text{F}&amp;\text{T}&amp;\text{T}\\\text{Т}&amp;\text{Т}&amp;\text{F}&amp;\text{F}&amp;\text{T}&amp;\text{T}\\\text{T}&amp;\text{F}&amp;\text{T}&amp;\text{T}&amp;\text{F}&amp;\text{T}\\\text{T}&amp;\text{F}&amp;\text{F}&amp;\text{T}&amp;\text{T}&amp;\text{T}\\\text{F}&amp;\text{T}&amp;\text{T}&amp;\text{F}&amp;\text{T}&amp;\text{T}\\\text{F}&amp;\text{T}&amp;\text{F}&amp;\text{F}&amp;\text{T}&amp;\text{T}\\\text{F}&amp;\text{F}&amp;\text{T}&amp;\text{T}&amp;\text{F}&amp;\text{F}\\\text{F}&amp;\text{F}&amp;\text{F}&amp;\text{T}&amp;\text{T}&amp;\text{T}&amp;\end{array}\end{split}\]</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -453,24 +564,6 @@ Hasil menunjukkan bahwa A ∧ (A ∨ B) sama dengan A.</p>
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="markdown.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Markdown Files</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="BOLEAN.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">BOOLEAN</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
@@ -487,9 +580,13 @@ Hasil menunjukkan bahwa A ∧ (A ∨ B) sama dengan A.</p>
     <i class="fa-solid fa-list"></i> Contents
   </div>
   <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#negasi">Negasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konjungsi">Konjungsi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disjungsi">Disjungsi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implikasi">Implikasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#biimplikasi">Biimplikasi</a></li>
 </ul>
-
   </nav></div>
 
 </div></div>
